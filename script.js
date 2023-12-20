@@ -170,22 +170,9 @@ var generateBtn = document.querySelector('#generate');
 // Add event listener to generate button
 generateBtn.addEventListener('click', writePassword);
 
-// You can store the generatedPassword as a string and concat each character OR
-// as an array and push each character, then join once you have enough characters
-
 // Function for getting a random element from an array
 function getRandom(arr) {
   let randomi = Math.floor (Math.random()*arr.length) 
   let randomel = arr[randomi]
   return randomel
-  // Need a variable to hold the password as it's being generated
-  // Need a variable to hold the index that's being generated
-
-  // For loop that loops the number of times that matches the length the user chose
-  // Generate a random number
-  // That number is the index for a character in the mega-array
-  // So then, mega-array[generated-index] is the actual character
-  // Add that character to the password
-
-  // Once we finish the for loop, return the generated password
 }
